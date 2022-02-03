@@ -109,6 +109,7 @@ body {
     margin: 10px;
     border-radius: 15px;
     transition: .2s ease-in;
+    pointer-events: auto;
 }
 .card-image{
     height: 170px;
@@ -169,6 +170,7 @@ body {
     border-radius: 15px;
     opacity: 0.2;
     cursor: not-allowed;
+    pointer-events: none;
 }
 .card_disabled .button{
     background-color: black;
