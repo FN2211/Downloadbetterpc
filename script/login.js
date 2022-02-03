@@ -8,15 +8,22 @@ var id3 = document.getElementById("Premium3");
 var btn1 = document.getElementById("btn1");
 var btn2 = document.getElementById("btn2");
 var btn3 = document.getElementById("btn3");
+const nopointerdisabled = document.getElementById("card_disabled");
 
 openPopup.addEventListener("click", () => {
     modal_container.classList.add("show");
     console.log("Click Open");
+    id1.style.pointerEvents = "none"
+    id2.style.pointerEvents = "none"
+    id3.style.pointerEvents = "none"
 });
 
 closePopup.addEventListener("click", () => {
     modal_container.classList.remove("show");
     console.log("Click Close");
+    id1.style.pointerEvents = "auto"
+    id2.style.pointerEvents = "auto"
+    id3.style.pointerEvents = "auto"
 });
 
 login.addEventListener("click", () =>{
