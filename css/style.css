@@ -170,7 +170,6 @@ body {
     border-radius: 15px;
     opacity: 0.2;
     cursor: not-allowed;
-    pointer-events: none;
 }
 .card_disabled .button{
     background-color: black;
@@ -181,6 +180,9 @@ body {
     margin: 20px 50px;
     background-color: black;
     border-radius: 50px;
+    cursor: not-allowed;
+}
+.card_disabled:hover{
     cursor: not-allowed;
 }
 
@@ -222,13 +224,14 @@ button:hover{
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     text-align: center;
+    opacity: 1;
 }
 .modal h1{
     margin: 0;
 }
 .modal p{
     font-size: 14px;
-    opacity: 0.7;
+    opacity: 1;
 }
 .modal-container.show{
     pointer-events: auto;
