@@ -185,7 +185,10 @@ body {
 .card_disabled:hover{
     cursor: not-allowed;
 }
-
+/* Button Disabled*/
+.button:disabled{
+    cursor: not-allowed;
+}
 /* Popup */
 .button{
     background-color: black;
